@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "560235831366",
+    "project_id": "zelo-9cedf",
+    "storage_bucket": "zelo-9cedf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:560235831366:android:08945ba00c43d793db2a47",
+        "android_client_info": {
+          "package_name": "io.builderking.hiva"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDRtgdUvR31HpR5b30wrvtoqTENt1lhJJU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
