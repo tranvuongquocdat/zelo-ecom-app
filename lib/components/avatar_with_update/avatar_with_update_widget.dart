@@ -45,6 +45,8 @@ class _AvatarWithUpdateWidgetState extends State<AvatarWithUpdateWidget> {
         _model.updatePage(() {});
       }
     });
+
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

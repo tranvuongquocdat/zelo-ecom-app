@@ -29,6 +29,8 @@ class _LoginSecureWidgetState extends State<LoginSecureWidget> {
   void initState() {
     super.initState();
     _model = createModel(context, () => LoginSecureModel());
+
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

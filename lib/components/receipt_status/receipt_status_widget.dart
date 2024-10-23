@@ -31,6 +31,8 @@ class _ReceiptStatusWidgetState extends State<ReceiptStatusWidget> {
   void initState() {
     super.initState();
     _model = createModel(context, () => ReceiptStatusModel());
+
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

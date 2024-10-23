@@ -23,6 +23,8 @@ class _SpecialOffersWidgetState extends State<SpecialOffersWidget> {
   void initState() {
     super.initState();
     _model = createModel(context, () => SpecialOffersModel());
+
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

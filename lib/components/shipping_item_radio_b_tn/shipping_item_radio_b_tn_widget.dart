@@ -40,6 +40,8 @@ class _ShippingItemRadioBTnWidgetState
   void initState() {
     super.initState();
     _model = createModel(context, () => ShippingItemRadioBTnModel());
+
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

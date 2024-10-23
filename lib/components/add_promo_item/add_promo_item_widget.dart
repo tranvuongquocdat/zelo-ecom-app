@@ -35,6 +35,8 @@ class _AddPromoItemWidgetState extends State<AddPromoItemWidget> {
   void initState() {
     super.initState();
     _model = createModel(context, () => AddPromoItemModel());
+
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

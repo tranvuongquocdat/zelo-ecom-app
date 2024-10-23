@@ -31,6 +31,8 @@ class _DividerWidgetState extends State<DividerWidget> {
   void initState() {
     super.initState();
     _model = createModel(context, () => DividerModel());
+
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

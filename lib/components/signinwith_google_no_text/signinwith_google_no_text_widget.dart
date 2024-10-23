@@ -32,6 +32,8 @@ class _SigninwithGoogleNoTextWidgetState
   void initState() {
     super.initState();
     _model = createModel(context, () => SigninwithGoogleNoTextModel());
+
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

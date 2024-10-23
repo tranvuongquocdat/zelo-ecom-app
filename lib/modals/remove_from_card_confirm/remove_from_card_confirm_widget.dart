@@ -34,6 +34,8 @@ class _RemoveFromCardConfirmWidgetState
   void initState() {
     super.initState();
     _model = createModel(context, () => RemoveFromCardConfirmModel());
+
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

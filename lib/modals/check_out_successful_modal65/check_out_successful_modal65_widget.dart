@@ -27,6 +27,8 @@ class _CheckOutSuccessfulModal65WidgetState
   void initState() {
     super.initState();
     _model = createModel(context, () => CheckOutSuccessfulModal65Model());
+
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

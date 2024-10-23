@@ -34,6 +34,8 @@ class _SpecialOfferCardWidgetState extends State<SpecialOfferCardWidget> {
   void initState() {
     super.initState();
     _model = createModel(context, () => SpecialOfferCardModel());
+
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

@@ -36,6 +36,8 @@ class _FaqItemsAnswerQuestionsWidgetState
   void initState() {
     super.initState();
     _model = createModel(context, () => FaqItemsAnswerQuestionsModel());
+
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

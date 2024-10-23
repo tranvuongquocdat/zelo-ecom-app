@@ -31,6 +31,8 @@ class _LanguagesItemWidgetState extends State<LanguagesItemWidget> {
   void initState() {
     super.initState();
     _model = createModel(context, () => LanguagesItemModel());
+
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

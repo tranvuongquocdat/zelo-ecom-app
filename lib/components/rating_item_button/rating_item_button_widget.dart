@@ -34,6 +34,8 @@ class _RatingItemButtonWidgetState extends State<RatingItemButtonWidget> {
   void initState() {
     super.initState();
     _model = createModel(context, () => RatingItemButtonModel());
+
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

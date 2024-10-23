@@ -32,6 +32,8 @@ class _SettingItemWidgetState extends State<SettingItemWidget> {
   void initState() {
     super.initState();
     _model = createModel(context, () => SettingItemModel());
+
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

@@ -35,6 +35,7 @@ class _SettingNotificationWidgetState extends State<SettingNotificationWidget> {
     _model.switchValue8 = FFAppState().NotificationConfiguration.appUpdates;
     _model.switchValue9 = FFAppState().NotificationConfiguration.newServices;
     _model.switchValue10 = FFAppState().NotificationConfiguration.newTips;
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

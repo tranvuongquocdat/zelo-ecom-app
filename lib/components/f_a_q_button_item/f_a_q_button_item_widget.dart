@@ -30,6 +30,8 @@ class _FAQButtonItemWidgetState extends State<FAQButtonItemWidget> {
   void initState() {
     super.initState();
     _model = createModel(context, () => FAQButtonItemModel());
+
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

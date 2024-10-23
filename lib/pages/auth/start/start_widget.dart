@@ -86,6 +86,8 @@ class _StartWidgetState extends State<StartWidget>
         ],
       ),
     });
+
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

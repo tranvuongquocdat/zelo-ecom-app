@@ -26,6 +26,8 @@ class _SecurityChoiceWidgetState extends State<SecurityChoiceWidget> {
   void initState() {
     super.initState();
     _model = createModel(context, () => SecurityChoiceModel());
+
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

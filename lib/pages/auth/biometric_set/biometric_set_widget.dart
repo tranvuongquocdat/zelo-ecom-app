@@ -113,6 +113,8 @@ class _BiometricSetWidgetState extends State<BiometricSetWidget> {
         ).then((value) => safeSetState(() {}));
       }
     });
+
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

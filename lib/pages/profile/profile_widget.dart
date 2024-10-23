@@ -29,6 +29,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
     _model = createModel(context, () => ProfileModel());
 
     _model.switchValue = false;
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

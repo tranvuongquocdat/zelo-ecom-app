@@ -27,6 +27,8 @@ class _PinCodeSetWidgetState extends State<PinCodeSetWidget> {
   void initState() {
     super.initState();
     _model = createModel(context, () => PinCodeSetModel());
+
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

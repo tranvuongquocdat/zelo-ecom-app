@@ -46,6 +46,8 @@ class _ProductSearchItemWidgetState extends State<ProductSearchItemWidget> {
   void initState() {
     super.initState();
     _model = createModel(context, () => ProductSearchItemModel());
+
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

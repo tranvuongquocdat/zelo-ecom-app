@@ -123,6 +123,8 @@ class _CustomerSupportWidgetState extends State<CustomerSupportWidget>
         ],
       ),
     });
+
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

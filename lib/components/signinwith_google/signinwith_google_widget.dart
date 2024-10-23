@@ -34,6 +34,8 @@ class _SigninwithGoogleWidgetState extends State<SigninwithGoogleWidget> {
   void initState() {
     super.initState();
     _model = createModel(context, () => SigninwithGoogleModel());
+
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

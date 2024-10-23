@@ -33,6 +33,8 @@ class _TrackOrderWidgetState extends State<TrackOrderWidget> {
   void initState() {
     super.initState();
     _model = createModel(context, () => TrackOrderModel());
+
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

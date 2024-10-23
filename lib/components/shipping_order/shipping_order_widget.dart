@@ -33,6 +33,8 @@ class _ShippingOrderWidgetState extends State<ShippingOrderWidget> {
   void initState() {
     super.initState();
     _model = createModel(context, () => ShippingOrderModel());
+
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

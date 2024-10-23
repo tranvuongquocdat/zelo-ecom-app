@@ -40,6 +40,8 @@ class _PaymentMethodItemWidgetState extends State<PaymentMethodItemWidget> {
   void initState() {
     super.initState();
     _model = createModel(context, () => PaymentMethodItemModel());
+
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

@@ -51,6 +51,8 @@ class _ProductsWidgetState extends State<ProductsWidget> {
       _model.categori = widget.showActiveCategory;
       safeSetState(() {});
     });
+
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

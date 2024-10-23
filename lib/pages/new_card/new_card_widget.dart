@@ -38,6 +38,8 @@ class _NewCardWidgetState extends State<NewCardWidget> {
 
     _model.cvvTextController ??= TextEditingController();
     _model.cvvFocusNode ??= FocusNode();
+
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

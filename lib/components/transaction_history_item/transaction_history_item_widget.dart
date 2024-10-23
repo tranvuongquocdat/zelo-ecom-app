@@ -41,6 +41,8 @@ class _TransactionHistoryItemWidgetState
   void initState() {
     super.initState();
     _model = createModel(context, () => TransactionHistoryItemModel());
+
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

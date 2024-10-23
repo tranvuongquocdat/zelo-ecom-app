@@ -32,6 +32,8 @@ class _ItemButtonWidgetState extends State<ItemButtonWidget> {
   void initState() {
     super.initState();
     _model = createModel(context, () => ItemButtonModel());
+
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

@@ -40,6 +40,8 @@ class _OrderTrackItemWidgetState extends State<OrderTrackItemWidget> {
   void initState() {
     super.initState();
     _model = createModel(context, () => OrderTrackItemModel());
+
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

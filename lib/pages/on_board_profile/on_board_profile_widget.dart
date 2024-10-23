@@ -59,6 +59,8 @@ class _OnBoardProfileWidgetState extends State<OnBoardProfileWidget> {
     _model.tfPhoneTextController ??=
         TextEditingController(text: currentPhoneNumber);
     _model.tfPhoneFocusNode ??= FocusNode();
+
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

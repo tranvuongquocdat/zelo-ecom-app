@@ -45,6 +45,8 @@ class _MoneyCardWidgetState extends State<MoneyCardWidget> {
   void initState() {
     super.initState();
     _model = createModel(context, () => MoneyCardModel());
+
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

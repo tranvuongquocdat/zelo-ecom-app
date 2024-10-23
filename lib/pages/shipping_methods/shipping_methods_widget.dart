@@ -23,6 +23,8 @@ class _ShippingMethodsWidgetState extends State<ShippingMethodsWidget> {
   void initState() {
     super.initState();
     _model = createModel(context, () => ShippingMethodsModel());
+
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

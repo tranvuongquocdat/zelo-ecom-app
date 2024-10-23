@@ -31,6 +31,8 @@ class _TrackShowWidgetState extends State<TrackShowWidget> {
   void initState() {
     super.initState();
     _model = createModel(context, () => TrackShowModel());
+
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

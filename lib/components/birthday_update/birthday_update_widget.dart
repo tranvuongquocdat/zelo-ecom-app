@@ -38,6 +38,8 @@ class _BirthdayUpdateWidgetState extends State<BirthdayUpdateWidget> {
         _model.updatePage(() {});
       }
     });
+
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

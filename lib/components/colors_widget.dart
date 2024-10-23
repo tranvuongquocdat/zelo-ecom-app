@@ -38,6 +38,8 @@ class _ColorsWidgetState extends State<ColorsWidget> {
       _model.selectedColor = widget.defaultValue;
       safeSetState(() {});
     });
+
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

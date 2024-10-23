@@ -43,6 +43,8 @@ class _InfoConfirmModalWidgetState extends State<InfoConfirmModalWidget> {
   void initState() {
     super.initState();
     _model = createModel(context, () => InfoConfirmModalModel());
+
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

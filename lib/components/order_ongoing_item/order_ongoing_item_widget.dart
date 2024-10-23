@@ -40,6 +40,8 @@ class _OrderOngoingItemWidgetState extends State<OrderOngoingItemWidget> {
   void initState() {
     super.initState();
     _model = createModel(context, () => OrderOngoingItemModel());
+
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

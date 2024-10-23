@@ -31,6 +31,8 @@ class _ReviewsWidgetState extends State<ReviewsWidget> {
   void initState() {
     super.initState();
     _model = createModel(context, () => ReviewsModel());
+
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

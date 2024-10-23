@@ -29,6 +29,8 @@ class _SortAndFilterModal37WidgetState
   void initState() {
     super.initState();
     _model = createModel(context, () => SortAndFilterModal37Model());
+
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

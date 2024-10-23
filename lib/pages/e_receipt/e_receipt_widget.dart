@@ -33,6 +33,8 @@ class _EReceiptWidgetState extends State<EReceiptWidget> {
   void initState() {
     super.initState();
     _model = createModel(context, () => EReceiptModel());
+
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

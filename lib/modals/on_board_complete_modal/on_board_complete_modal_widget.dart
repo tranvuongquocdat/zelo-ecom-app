@@ -36,6 +36,8 @@ class _OnBoardCompleteModalWidgetState
 
       context.goNamed('Home');
     });
+
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

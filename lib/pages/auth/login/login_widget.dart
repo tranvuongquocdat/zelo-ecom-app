@@ -448,21 +448,11 @@ class _LoginWidgetState extends State<LoginWidget> {
                                             onPressed: () async {
                                               GoRouter.of(context)
                                                   .prepareAuthEvent();
-
                                               final user = await authManager
-                                                  .signInWithEmail(
-                                                context,
-                                                _model
-                                                    .emailTextFieldTextController
-                                                    .text,
-                                                _model
-                                                    .passwordTextFieldTextController
-                                                    .text,
-                                              );
+                                                  .signInWithGoogle(context);
                                               if (user == null) {
                                                 return;
                                               }
-
                                               if (!loggedIn) {
                                                 context.pushNamedAuth(
                                                     'Start', context.mounted);

@@ -56,6 +56,8 @@ class _DetailWidgetState extends State<DetailWidget> {
         safeSetState(() {});
       }
     });
+
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

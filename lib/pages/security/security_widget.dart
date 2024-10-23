@@ -32,6 +32,7 @@ class _SecurityWidgetState extends State<SecurityWidget> {
         valueOrDefault<bool>(currentUserDocument?.pinCodeEnabled, false);
     _model.switchValue3 =
         valueOrDefault<bool>(currentUserDocument?.biometricEnabled, false);
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

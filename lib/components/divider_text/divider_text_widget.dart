@@ -29,6 +29,8 @@ class _DividerTextWidgetState extends State<DividerTextWidget> {
   void initState() {
     super.initState();
     _model = createModel(context, () => DividerTextModel());
+
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

@@ -26,6 +26,8 @@ class _WalletWidgetState extends State<WalletWidget> {
   void initState() {
     super.initState();
     _model = createModel(context, () => WalletModel());
+
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

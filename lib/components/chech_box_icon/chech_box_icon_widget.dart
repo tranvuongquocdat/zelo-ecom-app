@@ -40,6 +40,8 @@ class _ChechBoxIconWidgetState extends State<ChechBoxIconWidget> {
       _model.checked = widget.initialValue;
       _model.updatePage(() {});
     });
+
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

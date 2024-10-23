@@ -57,6 +57,8 @@ class _ProfileEditWidgetState extends State<ProfileEditWidget> {
     _model.tfPhoneTextController ??=
         TextEditingController(text: currentPhoneNumber);
     _model.tfPhoneFocusNode ??= FocusNode();
+
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

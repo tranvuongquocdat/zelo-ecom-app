@@ -27,6 +27,8 @@ class _TopUpSuccessfulModal75WidgetState
   void initState() {
     super.initState();
     _model = createModel(context, () => TopUpSuccessfulModal75Model());
+
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

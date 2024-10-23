@@ -43,6 +43,7 @@ class _HelpCenterWidgetState extends State<HelpCenterWidget>
         ExpandableController(initialExpanded: false);
     _model.expandableExpandableController6 =
         ExpandableController(initialExpanded: false);
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

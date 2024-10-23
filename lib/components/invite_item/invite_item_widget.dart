@@ -42,6 +42,8 @@ class _InviteItemWidgetState extends State<InviteItemWidget> {
   void initState() {
     super.initState();
     _model = createModel(context, () => InviteItemModel());
+
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

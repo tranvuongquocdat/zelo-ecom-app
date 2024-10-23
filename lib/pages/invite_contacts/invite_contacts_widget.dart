@@ -27,6 +27,8 @@ class _InviteContactsWidgetState extends State<InviteContactsWidget> {
   void initState() {
     super.initState();
     _model = createModel(context, () => InviteContactsModel());
+
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

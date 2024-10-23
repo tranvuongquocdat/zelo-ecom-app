@@ -39,6 +39,8 @@ class _SizesWidgetState extends State<SizesWidget> {
       _model.sizeSelected = widget.defaultValue;
       safeSetState(() {});
     });
+
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

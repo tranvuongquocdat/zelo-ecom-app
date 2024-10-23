@@ -35,6 +35,8 @@ class _ChooseShippingItemWidgetState extends State<ChooseShippingItemWidget> {
   void initState() {
     super.initState();
     _model = createModel(context, () => ChooseShippingItemModel());
+
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override
